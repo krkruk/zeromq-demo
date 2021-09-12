@@ -15,7 +15,7 @@ zeromq-client:
 zeromq-rover-inputs:
 	* a simple input source such as an application that reads joystick data and forwards it to the onboard computer
 
-::
-	zeromq-server  ---  zeromq-client
-				| 
-				+  ---  zeromq-rover-inputs
++------------------------------------------------------------------------------+
+| zeromq-rover-inputs <---> zeromq-server  <--->  zeromq-client                |
+|                                                                              |
++------------------------------------------------------------------------------+
